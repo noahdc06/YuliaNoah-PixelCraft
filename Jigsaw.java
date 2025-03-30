@@ -27,7 +27,7 @@ public class Jigsaw extends BaseConverter {
             int newXStart = newCol * sectWidth;
             int newYStart = newRow * sectHeight;
 
-            // This code calculates height and width adjusting if pixels dont split evenly
+            //This code calculates height and width adjusting if pixels dont split evenly
             int xWidth;
             if (ogCol == 2) {
                 xWidth = width - 2 * sectWidth;
@@ -41,7 +41,7 @@ public class Jigsaw extends BaseConverter {
                 yHeight = sectHeight;
             }
 
-            // Copies the pixels into the final image
+            //Copies the pixels into the final image
             for (int y = 0; y < yHeight; y++) {
                 for (int x = 0; x < xWidth; x++) {
                     int pixel = inputImage.getRGB(ogXStart + x, ogYStart + y);

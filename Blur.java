@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 
-public class Blur extends Converter {
+public class Blur extends BaseConverter {
 	
 	public void convert(String inputFileName, String outputFileName) throws IOException {
 		

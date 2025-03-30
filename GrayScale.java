@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class grayscale extends BaseConverter {
+public class GrayScale extends BaseConverter {
     @Override
     public void convert(String inputFileName, String outputFileName) throws IOException {
         BufferedImage inputImage = readImage(inputFileName);

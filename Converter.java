@@ -1,5 +1,4 @@
 import java.io.IOException;
-//Retrieve the code used to change PixelCraft and the individual converter for grayscale initially used without this class???
 
 
 public interface Converter {

@@ -22,7 +22,6 @@ public class GrayScale extends BaseConverter {
             }
         }
 
-        // Save the output image instead of displaying it
         writeImage(outputImage, outputFileName);
     }
 }

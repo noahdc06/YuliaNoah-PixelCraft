@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class pixelate implements Converter {
+public class pixelate extends BaseConverter {
     private static final int groupsize = 15; //Will cover a set of 15x15 pixels
     private BufferedImage inputImage;
     private BufferedImage outputImage;
@@ -11,13 +11,13 @@ public class pixelate implements Converter {
 
     @Override
     public void convert(String inputFileName, String outputFileName) throws IOException {
-        inputImage = ImageIO.read(new File(inputFileName));
+        inputImage = readImage(inputFileName);
         width = inputImage.getWidth();
         height = inputImage.getHeight();
         outputImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         
         processBlock(0, 0); // Start recursive processing
-        ImageIO.write(outputImage, "png", new File(outputFileName));
+        writeImage(outputImage, outputFileName);
     }
 
     private void processBlock(int x, int y) {

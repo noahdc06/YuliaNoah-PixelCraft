@@ -4,7 +4,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class Crop extends Converter {
+public class Crop extends BaseConverter {
 
 	@Override
 	public void convert(String inputFileName, String outputFileName) throws IOException {

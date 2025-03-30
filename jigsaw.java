@@ -3,10 +3,10 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 //Jigsaw breaks off nine sections of an image and swaps each section with the one on the opposite side
-public class jigsaw implements Converter {
+public class jigsaw extends BaseConverter {
     @Override
     public void convert(String inputFileName, String outputFileName) throws IOException {
-        BufferedImage inputImage = ImageIO.read(new File(inputFileName));
+    	BufferedImage inputImage = readImage(inputFileName);
         int width = inputImage.getWidth();
         int height = inputImage.getHeight();
 
@@ -50,6 +50,6 @@ public class jigsaw implements Converter {
             }
         }
 
-        ImageIO.write(outputImage, "png", new File(outputFileName));
+        writeImage(outputImage, outputFileName);
     }
 }

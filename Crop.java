@@ -4,11 +4,12 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class crop implements Converter {
-	
+public class Crop extends Converter {
+
+	@Override
 	public void convert(String inputFileName, String outputFileName) throws IOException {
 		
-		BufferedImage inputImage = ImageIO.read(new File(inputFileName));
+		BufferedImage inputImage = readImage(inputFileName);
 		int originalWidth = inputImage.getWidth();
 		int originalHeight = inputImage.getHeight();
 		
@@ -31,7 +32,7 @@ public class crop implements Converter {
 			}
 		}
 		
-		ImageIO.write(outputImage,  "png", new File(outputFileName));
+		writeImage(outputImage, outputFileName);
 	}
 	
 

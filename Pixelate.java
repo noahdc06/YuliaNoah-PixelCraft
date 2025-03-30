@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class pixelate extends BaseConverter {
+public class Pixelate extends BaseConverter {
     private static final int groupsize = 15; //Will cover a set of 15x15 pixels
     private BufferedImage inputImage;
     private BufferedImage outputImage;

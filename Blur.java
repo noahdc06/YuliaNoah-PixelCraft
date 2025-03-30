@@ -6,11 +6,11 @@ import java.io.IOException;
 
 
 
-public class blur implements Converter {
+public class Blur extends Converter {
 	
 	public void convert(String inputFileName, String outputFileName) throws IOException {
 		
-		BufferedImage inputImage = ImageIO.read(new File(inputFileName));
+		BufferedImage inputImage = readImage(inputFileName);
 		int width = inputImage.getWidth();
 		int height = inputImage.getHeight();
 		
@@ -46,7 +46,7 @@ public class blur implements Converter {
 			}
 		}
 		
-		ImageIO.write(outputImage, "png",  new File(outputFileName));
+		writeImage(outputImage, outputFileName);
 	}
 	
 

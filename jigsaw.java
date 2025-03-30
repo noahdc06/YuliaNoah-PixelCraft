@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 //Jigsaw breaks off nine sections of an image and swaps each section with the one on the opposite side
-public class jigsaw extends BaseConverter {
+public class Jigsaw extends BaseConverter {
     @Override
     public void convert(String inputFileName, String outputFileName) throws IOException {
     	BufferedImage inputImage = readImage(inputFileName);

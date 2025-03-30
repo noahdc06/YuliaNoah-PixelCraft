@@ -4,7 +4,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class Zoom extends Converter{
+public class Zoom extends BaseConverter {
 	
 	@Override
 	public void convert(String inputFileName, String outputFileName) throws IOException {

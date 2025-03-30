@@ -4,7 +4,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class Vignette extends Converter{
+public class Vignette extends BaseConverter {
 	
 	private static final int MAX_DARKNESS = 128;
 	private BufferedImage inputImage;

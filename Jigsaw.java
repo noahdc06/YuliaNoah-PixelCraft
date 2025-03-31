@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-/* This code aims to create a 'jigsaw' effect by separating the image into 50x50
+/* This program aims to create a 'jigsaw' effect by separating the image into 50x50
  * tiles and randomly swapping them. */
 public class Jigsaw extends BaseConverter {
 	// Variable declaration for variables which do not change throughout recursion

@@ -2,6 +2,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+
 /* This code aims to create a 'Jigsaw' effect by separating the image into 50x50
  * tiles and randomly swapping them. */
 public class Jigsaw extends BaseConverter {

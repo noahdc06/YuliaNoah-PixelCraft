@@ -21,7 +21,7 @@ public class Jigsaw extends BaseConverter {
         writeImage(outputImage, outputFileName);
     }
     
-    //Recursive method to select which tiles should be shuffled.
+    //Recursive method to randomly shuffle all tiels.
     private void shuffleTiles(int tileX, int tileY) {
     	// Base case: The bottom tile is reached, do nothing
         if (tileY >= height) return;

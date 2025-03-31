@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-/* This code aims to create a 'pixelate' effect by taking a 15x15 pixel block, 
+/* This program aims to create a 'pixelate' effect by taking a 15x15 pixel block, 
  * calculating the average of each individual ARGB value for all pixels across
  * that block, and setting every pixel within that block to that color.*/
 public class Pixelate extends BaseConverter {

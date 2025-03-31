@@ -2,7 +2,8 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-//Jigsaw breaks off nine sections of an image and swaps each section with the one on the opposite side
+//8x12 or 96 blocks for 400x600 pixels
+//29x23 or 667 blocks for 1440x1148
 public class Jigsaw extends BaseConverter {
     private static final int TILE_SIZE = 50;
     private BufferedImage inputImage, outputImage;

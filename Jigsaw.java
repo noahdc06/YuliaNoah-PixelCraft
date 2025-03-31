@@ -26,7 +26,7 @@ public class Jigsaw extends BaseConverter {
     	// Base case: The bottom tile is reached, do nothing
         if (tileY >= height) return;
         
-        // Recursively calls itself, iterating through each tile column and then through each row
+        // Recursively calls itself, iterating through each tile column and through each row
         if (tileX >= width) {
             shuffleTiles(0, tileY + 50);
         } else {
@@ -43,7 +43,7 @@ public class Jigsaw extends BaseConverter {
     private void swapPixels(int x1, int y1, int x2, int y2, int dx, int dy) {
     	//Base case: The bottom pixel is reached, do nothing
         if (dy >= 50) return;
-        // Recursively calls itself for 50 pixels, iterating through each pixel column and then through each row
+        // Recursively calls itself for 50 pixels, iterating through each pixel column and through each row
         if (dx >= 50) {
             swapPixels(x1, y1, x2, y2, 0, dy + 1);
         } else {

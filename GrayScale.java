@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-/* This class aims to create a 'gray' effect on the image by averaging out
+/* This program aims to create a 'gray' effect on the image by averaging out
  * the ARGB values on each pixel.*/
 public class GrayScale extends BaseConverter {
     public void convert(String inputFileName, String outputFileName) throws IOException {

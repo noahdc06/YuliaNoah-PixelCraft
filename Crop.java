@@ -28,7 +28,7 @@ public class Crop extends BaseConverter {
 				outputImage.setRGB(x, y, pixel);
 			}
 		}
-		//Uses BaseConverter method to output the image to PixelCraft
+		// Uses BaseConverter method to output the image to PixelCraft
 		writeImage(outputImage, outputFileName);
 	}
 	

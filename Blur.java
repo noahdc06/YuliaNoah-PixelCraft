@@ -44,7 +44,7 @@ public class Blur extends BaseConverter {
 				outputImage.setRGB(x, y, blurredPixel.toInt());
 			}
 		}
-		//Uses BaseConverter method to output the image to PixelCraft
+		// Uses BaseConverter method to output the image to PixelCraft
 		writeImage(outputImage, outputFileName);
 	}
 }

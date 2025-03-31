@@ -3,6 +3,8 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
+/* This program aims to create a new image rotated 90 degrees
+ * CLOCKWISE, keeping the image pixels identical in color*/
 public class Rotate extends BaseConverter {
     public void convert(String inputFileName, String outputFileName) throws IOException {
     	// Uses BaseConverter method to get the input image

@@ -12,15 +12,12 @@ public class Jigsaw extends BaseConverter {
 
     // Base method to hold and control all unchanging variables
     public void convert(String inputFileName, String outputFileName) throws IOException {
-    	// Uses BaseConverter method to get the input image
         inputImage = readImage(inputFileName);
         width = inputImage.getWidth();
         height = inputImage.getHeight();
-        // Creates the frame for the output image
         outputImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         // Begins recursive shuffling of tiles
         shuffleTiles(0, 0);
-        // Uses BaseConverter method to output the image to PixelCraft
         writeImage(outputImage, outputFileName);
     }
     

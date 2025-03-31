@@ -3,7 +3,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-/* This code aims to create a dark 'vignette' effect around an image
+/* This program aims to create a dark 'vignette' effect around an image
  * by darkening the pixels of the image based on how far from the
  * center they are.*/
 public class Vignette extends BaseConverter {
